@@ -20,7 +20,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::apiResource('/petition', PetitionController::class);
+Route::apiResource('/petitions', PetitionController::class);
 
 Route::resource('/author', AuthorController::class)->only([
     'index', 'show'
